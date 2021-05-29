@@ -1,0 +1,5 @@
+username,password,confirmation,name,surname,email,company,sector
+johnny,johnny,johnny,Johnny,López,john@gmail.com,"""Ayesa""",Retailer
+leslie,leslie,leslie,Leslie Marti,Ramport,leslie@us.es,"""NEtworks, Inc""",Communications
+pepeluis,pepeluis,pepeluis,José Luis,Sørensen,ppepe.sorensen@sweden.sw,"""Baby Care, GmbH""",Children care
+luisa,luisa,luisa,Luisa,Martínez López,luisa@luisa.name,"""Baby Care, GmbH""",Children care
