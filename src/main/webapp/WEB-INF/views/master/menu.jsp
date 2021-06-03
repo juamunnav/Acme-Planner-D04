@@ -30,17 +30,6 @@
 			<acme:menu-separator />
 		</acme:menu-option>
 
-		<acme:menu-option code="master.menu.anonymous"
-			access="hasRole('Manager')">
-			<acme:menu-suboption code="master.menu.anonymous.shout"
-				action="/anonymous/shout/create" />
-			<acme:menu-suboption code="master.menu.anonymous.list-shouts"
-				action="/anonymous/shout/list" />
-			<acme:menu-separator />
-			<acme:menu-suboption code="master.menu.anonymous.task.list"
-				action="/anonymous/task/list" />
-			<acme:menu-separator />
-		</acme:menu-option>
 		<acme:menu-option code="master.menu.manager"
 			access="hasRole('Manager')">
 			<acme:menu-suboption code="master.menu.manager.create.tasks"
@@ -114,8 +103,8 @@
 				access="!hasRole('Consumer')" />
 			<acme:menu-suboption code="master.menu.user-account.consumer"
 				action="/authenticated/consumer/update" access="hasRole('Consumer')" />
-			<%-- <acme:menu-suboption code="master.menu.user-account.become-manager"
-				action="/authenticated/manager/create" access="!hasRole('Manager')" /> --%>
+		 	<acme:menu-suboption code="master.menu.user-account.become-manager"
+				action="/authenticated/manager/create" access="!hasRole('Manager')" /> 
 			<acme:menu-suboption code="master.menu.user-account.manager"
 				action="/authenticated/manager/update" access="hasRole('Manager')" />
 
