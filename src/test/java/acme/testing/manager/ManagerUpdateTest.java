@@ -42,9 +42,9 @@ public class ManagerUpdateTest extends SignUpTest {
 	}
 	
 	/*
-	 * Tested Feature: An authenticated user becomes a manager
-	 * Violated constraints: Company and sector must not be blank.
-	 * Expected results: An authenticated does not become a manager due to the errors at the form
+	 * Tested Feature: A Manager user updates sector and company fields
+	 * Violated constraints: sector and company fields blank.
+	 * Expected results: Errors messages in sector and company fields
 	 */
 	@ParameterizedTest
 	@CsvFileSource(resources = "/sign-up/becomeManagerNegative.csv", encoding = "utf-8", numLinesToSkip = 1)
