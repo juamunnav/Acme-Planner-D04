@@ -358,6 +358,30 @@
 		class="acme.framework.entities.Authenticated">
 		<property name="userAccount" ref="authenticatedUserAccount01" />
 	</bean>
+	
+	<bean name="authenticatedUserAccount02"
+		class="acme.framework.entities.UserAccount">
+		<property name="username" value="authenticated02" />
+		<property name="password" value="authenticated02" />
+		<property name="enabled" value="true" />
+		<property name="identity">
+			<bean class="acme.datatypes.UserIdentity">
+				<property name="name" value="javi" />
+				<property name="surname" value="López" />
+				<property name="email" value="jlopez@acme.com" />
+			</bean>
+		</property>
+		<property name="roles">
+			<list>
+				<ref bean="authenticated02" />
+			</list>
+		</property>
+	</bean>
+
+	<bean name="authenticated02"
+		class="acme.framework.entities.Authenticated">
+		<property name="userAccount" ref="authenticatedUserAccount02" />
+	</bean>
 
 	<bean id="task14" class="acme.entities.Task">
 		<property name="start" value="2022/04/26 12:30" />
