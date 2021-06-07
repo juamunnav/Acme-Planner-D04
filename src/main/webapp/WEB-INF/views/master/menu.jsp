@@ -104,7 +104,7 @@
 			<acme:menu-suboption code="master.menu.user-account.consumer"
 				action="/authenticated/consumer/update" access="hasRole('Consumer')" />
 		 	<acme:menu-suboption code="master.menu.user-account.become-manager"
-				action="/authenticated/manager/create" access="!hasRole('Manager')" /> 
+				action="/authenticated/manager/create" access="!hasRole('Manager') && !hasRole('Administrator') " /> 
 			<acme:menu-suboption code="master.menu.user-account.manager"
 				action="/authenticated/manager/update" access="hasRole('Manager')" />
 

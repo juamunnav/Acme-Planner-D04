@@ -19,19 +19,6 @@ public class SignUpTest extends AcmeTest {
 	// This is a placeholder where you can introduce your own sign-up test
 	// Note that it depends on your project-specific test class.
 
-	//	@Override
-	//	@BeforeAll
-	//	public void beforeAll() {
-	//		super.beforeAll();
-	//
-	//		super.setBaseCamp("http", "localhost", "8080", "/Acme-Planner", "/master/welcome", "?language=en&debug=true");
-	//		super.setAutoPausing(true);
-	//
-	//		this.navigateHome();
-	//		this.signIn("administrator", "administrator");
-	//		super.clickOnMenu("Administrator", "Populate DB (initial)");
-	//		this.signOut();
-	//	}
 
 	public void signIn(final String username, final String password) {
 		super.navigateHome();
