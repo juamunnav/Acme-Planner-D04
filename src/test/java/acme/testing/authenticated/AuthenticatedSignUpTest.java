@@ -8,7 +8,7 @@ import org.springframework.core.annotation.Order;
 
 import acme.testing.SignUpTest;
 
-public class AuthenticatedSignInTest extends SignUpTest{
+public class AuthenticatedSignUpTest extends SignUpTest{
 
 	@Override
 	@BeforeAll
@@ -23,7 +23,6 @@ public class AuthenticatedSignInTest extends SignUpTest{
 		super.clickOnMenu("Administrator", "Populate DB (samples)");
 
 	}
-
 	/*
 	 * Tested Feature: An user registers in the system.
 	 * Violated constraints: Not applicable.
