@@ -16,7 +16,3 @@ This project implements the requirements for the levels C and B.
 
 GitHub's repository link -> https://github.com/juamunnav/Acme-Planner-D04
 GitHub's release link -> https://github.com/juamunnav/Acme-Planner-D04/releases/tag/v1.0
-			 	 
-CleverCloud:
-username:u9qprtqcrskwmgmw
-password:HI8g1ttKZwPwonPTXhyI
