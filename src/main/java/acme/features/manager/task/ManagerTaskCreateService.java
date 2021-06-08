@@ -141,7 +141,7 @@ public class ManagerTaskCreateService implements AbstractCreateService<Manager, 
 //		final int titleLength = request.getModel().getString("title").length();
 //		errors.state(request, titleLength >= 1 && titleLength <= 80, "title", "acme.validation.length", 1, 80);
 		
-		if (!errors.hasErrors("text") && !errors.hasErrors("title")) {
+		if (!errors.hasErrors("text") || !errors.hasErrors("title")) {
 			final List<Word> palabrasSpam = this.repository.spWords();
 
 			final String pal = entity.getTitle().trim();

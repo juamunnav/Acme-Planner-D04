@@ -91,7 +91,7 @@ public class AnonymousShoutCreateService implements AbstractCreateService<Anonym
 		final int authorLength = request.getModel().getString("author").length();
 		errors.state(request, authorLength >= 5 && authorLength <= 25, "author", "acme.validation.length", 5, 25);
 
-		if (!errors.hasErrors("text") && !errors.hasErrors("author")) {
+		if (!errors.hasErrors("text") || !errors.hasErrors("author")) {
 
 			final List<Word> palabrasSpam = this.repository.spWords();
 
