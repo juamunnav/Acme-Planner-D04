@@ -118,21 +118,22 @@ public class ManagerTaskUpdateService implements AbstractUpdateService<Manager, 
 
 			final List<Word> palabrasSpam = this.repository.spWords();
 
-			final String pal = entity.getTitle().trim().toLowerCase();
+			final String pal = entity.getTitle().trim().toLowerCase().replace(" ", "");
 			final Integer tamA = entity.getTitle().split(" ").length;
 
-			final String pal2 = entity.getText().trim().toLowerCase();
+			final String pal2 = entity.getText().trim().toLowerCase().replace(" ", "");
 			final Integer tamT = entity.getText().split(" ").length;
 
 			double acumA = 0;
 			double acumT = 0;
 
 			for (int i = 0; i < palabrasSpam.size(); i++) {
-
-				if (pal.contains(palabrasSpam.get(i).getPalabra())) {
+				final String sinEspacios = palabrasSpam.get(i).getPalabra().replace(" ", "");
+				if (pal.contains(sinEspacios)) {
 					acumA++;
 				}
-				if (pal2.contains(palabrasSpam.get(i).getPalabra())) {
+				final String sinEspacios2 = palabrasSpam.get(i).getPalabra().replace(" ", "");
+				if (pal2.contains(sinEspacios2)) {
 					acumT++;
 				}
 
